@@ -14,10 +14,12 @@ class Sponsors extends StatelessWidget {
     new Sponsor("https://ogrencikariyeri.com/", "assets/ogrenci_kariyeri.png", 1000, 400),
     new Sponsor("https://paycell.com.tr/", "assets/paycell.png", 400, 500),
     new Sponsor("https://etugaraj.org/#", "assets/garaj.png", 1000, 500),
+    new Sponsor("https://www.bthaber.com/", "assets/bthaber_logo.png", 400, 150),
   ];
 
     var sponsorsListSecond = [
-    new Sponsor("https://www.coffeeproject.com.tr/", "assets/coffee_project.png", 700, 100),
+      new Sponsor("https://www.coffeeproject.com.tr/", "assets/coffee_project.png", 700, 100),
+    new Sponsor("https://www.cozumpark.com/", "assets/cozumpark.png", 700, 100),
     new Sponsor("https://www.instagram.com/endustrimuhendisligi/?hl=tr", "assets/endustri_muhendisligi.jpg", 500, 500),
     new Sponsor("https://www.instagram.com/industrialstudent/?hl=tr", "assets/industrial_student.png", 500, 500),
     new Sponsor("https://uni-path.com/", "assets/unipath.png", 500, 500),
