@@ -24,7 +24,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   EventProgram eventProgram;
   double eventProgramHeight = 3000;
-  double eventProgramHeightSmall = 3350;
+  double eventProgramHeightSmall = 3800;
   ScrollController _scrollController = ScrollController();
   var _controller = ScrollController();
   List<HeaderItem> headerItems = [
@@ -71,7 +71,7 @@ class _HomeState extends State<Home> {
           appBar: PreferredSize(
             preferredSize: Size(screenSize.width, 1000),
             child: Container(
-              height: 100,
+              height: 70,
               color: kCaptionColor.withOpacity(0.5),
               child: Padding(
                 padding: EdgeInsets.all(20),
@@ -380,9 +380,9 @@ class _HomeState extends State<Home> {
                                   ),
                                   onPressed: () async {
                                     if (await canLaunch(
-                                        "https://docs.google.com/forms/d/1BhbBEBSrQRJclF3wXFNdUQuD84e9iknZoEdhUAJoNd8/edit")) {
+                                        "https://forms.gle/YkSMJhWiaL7QnmaF9")) {
                                       await launch(
-                                          "https://docs.google.com/forms/d/1BhbBEBSrQRJclF3wXFNdUQuD84e9iknZoEdhUAJoNd8/edit");
+                                          "https://forms.gle/YkSMJhWiaL7QnmaF9");
                                     }
                                   },
                                 ),
@@ -531,7 +531,7 @@ class _HomeState extends State<Home> {
                     ),
                     InkWell(
                       onTap: () {
-                        _animateToIndex(2100.0);
+                        _animateToIndex(2300.0);
                       },
                       child: Text(
                         AppLocalizations.of(context).translate('event_program'),
@@ -544,7 +544,7 @@ class _HomeState extends State<Home> {
                     ),
                     InkWell(
                       onTap: () {
-                        _animateToIndex(eventProgramHeightSmall + 2200);
+                        _animateToIndex(eventProgramHeightSmall + 2300);
                       },
                       child: Text(
                         AppLocalizations.of(context).translate('our_sponsors'),
@@ -647,9 +647,9 @@ class _HomeState extends State<Home> {
                                   ),
                                   onPressed: () async {
                                     if (await canLaunch(
-                                        "https://docs.google.com/forms/d/1BhbBEBSrQRJclF3wXFNdUQuD84e9iknZoEdhUAJoNd8/edit")) {
+                                        "https://forms.gle/YkSMJhWiaL7QnmaF9")) {
                                       await launch(
-                                          "https://docs.google.com/forms/d/1BhbBEBSrQRJclF3wXFNdUQuD84e9iknZoEdhUAJoNd8/edit");
+                                          "https://forms.gle/YkSMJhWiaL7QnmaF9");
                                     }
                                   },
                                 ),
