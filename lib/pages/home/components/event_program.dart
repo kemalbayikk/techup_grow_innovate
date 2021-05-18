@@ -170,7 +170,7 @@ class _EventProgramState extends State<EventProgram> {
                     child: TextButton(
                       onPressed: () {
                         setState(() {
-                          this.widget.callback(1450.0, 3350.0);
+                          this.widget.callback(1450.0, 4000.0);
                           selectedButton = 0;
                           buttonZeroColor = kCaptionColor;
                           buttonZeroTextColor = Colors.white;
@@ -362,17 +362,14 @@ class _EventProgramState extends State<EventProgram> {
                                     shape: RoundedRectangleBorder(
                                         borderRadius:
                                             BorderRadius.circular(16)),
-                                    content: speakerDetail(
-                                        imageUrl,
-                                        speaker,
-                                        aboutFirst,
-                                        linkedinFirst),
+                                    content: speakerDetail(imageUrl, speaker,
+                                        aboutFirst, linkedinFirst),
                                   ),
                                 ),
                               );
                             },
                             child: Container(
-                              width: MediaQuery.of(context).size.width / 4,
+                              width: MediaQuery.of(context).size.width / 3.5,
                               child: Text(
                                 speaker,
                                 style: GoogleFonts.montserrat(
@@ -387,7 +384,7 @@ class _EventProgramState extends State<EventProgram> {
                           ),
                         ),
                         Container(
-                          width: MediaQuery.of(context).size.width / 4,
+                          width: MediaQuery.of(context).size.width / 3.5,
                           child: Text(
                             speakerTitle,
                             style: GoogleFonts.montserrat(
@@ -478,7 +475,7 @@ class _EventProgramState extends State<EventProgram> {
                                   },
                                   child: Container(
                                     width:
-                                        MediaQuery.of(context).size.width / 4,
+                                        MediaQuery.of(context).size.width / 3.5,
                                     child: Text(
                                       secondSpeaker,
                                       style: GoogleFonts.montserrat(
@@ -499,7 +496,7 @@ class _EventProgramState extends State<EventProgram> {
                                 ),
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width / 4,
+                                width: MediaQuery.of(context).size.width / 3.5,
                                 child: Text(
                                   secondSpeakerTitle,
                                   style: GoogleFonts.montserrat(
@@ -633,10 +630,10 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -655,17 +652,17 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               "",
               "",
               "https://www.linkedin.com/in/mustafasavas/",
-              "about mustafa savaş",
+              "He studied Mechanical Engineering at university and worked as a software developer and trainer for many years. Today, he leads the core technology development of Kimola and he is also responsible for company’s future plans and strategies.",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
               color: dividerColor,
               height: 1,
             ),
-             eventCard(
-              "WBA",
+            eventCard(
+              "Girişimcilikte Global Başarı Nasıl Yakalanır?",
               "Sezer Değirmenbaşı",
               "Industry Manager; Start-Ups, Apps & Gaming at Google",
               "13:00-13:55",
@@ -676,9 +673,9 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               "",
               "",
               "https://www.linkedin.com/in/sezer/",
-              "about sezer değirmenbaşı",
+              "Sezer Değirmenbaşı İTÜ İşletme Mühendisliği bölümünden 2006 yılında mezun oldu. 2009 yılında Boğaziçi Üniversitesi'nde İşletme Bilişim Sistemleri bölümünde yüksek lisansını tamamladı. 2006 - 2007 yılları arasında GittiGidiyor.com'da Category & Marketing Specialist olarak çalıştı. Ardından 2007 - 2010 yılları arasında Sony'de Analytics & Communications Consultant olarak görev aldı. 2010 yılından beri çalışmakta olduğu şirket olan Google'da ise Account Strategist, Account Manager, Principal Account Manager olmak üzere birçok pozisyonda görev yaptı. Şu anda Industry Manager olarak Google'da çalışmaya devam etmekte.",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -696,10 +693,10 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -708,17 +705,21 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
             ),
             eventCard(
               AppLocalizations.of(context).translate('evolving'),
-              "Nazlı Temurtaş",
-              "Co-Founder & CEO at MondayHero, Inc.",
+              "Çiğdem Kayalı",
+              "Women at Microsoft lead - Microsoft MEA, Founding & Board Member of Teknolojide Kadın Derneği",
               "17:00-17:55",
-              "nazli_temurtas.jpg",
+              "cigdem_kayali.jpg",
               true,
               true,
               "Zehra Öney",
-              "Founder & CEO of 360+ Media Interactive, Founding President of Teknolojide Kadın Derneği (Wtech) and Fresh'N Partners Co-Founder",
+              "Founding President of Teknolojide Kadın Derneği (Wtech)",
               "zehra_oney.jpg",
-              "https://www.linkedin.com/in/nazlitemurtas/",
-              "about nazlı temurtaş",
+              "https://www.linkedin.com/in/cigdem-kayali-0b8555/",
+              """Çiğdem Kayalı, kurumların dijital dönüşüm yolculuklarına ışık tutan, hızla gelişen teknoloji trendlerinin yaygınlaştırılmasında rol oynayan liderlerdendir. Son 5 yılını farklı sektörlerin bulut servislerinden yararlanmaları için çaba harcadı ve Microsoft’un Türkiye’de genel bulutta lider olarak yer almasında rol oynadı.
+
+Kontollü riskler almayı seven, derin endüstri bilgisine sahip olan Kayalı, kurumların ve tüketicilerin bulut servisleri ile tanışması için öncülük etmiştir. Kayalı, başta Office 365 olmak üzere Microsoft bulut servislerinin pazar stratejisini tasarladı, geliştirdi ve yönetti. Microsoft’taki 20 yıllık görev süresi boyunca, Kayalı iş stratejileri geliştirerek ve yeni iş modellerini hayata geçirerek ün kazandı. Microsoft MEA, CEE ve EMEA bölge ofislerinde farklı yöneticilik pozisyonlarında görev aldı. Bölge ülkelerindeki dijital dönüşüm faliyetlerinde liderlik gösterdiği gibi, farklı sektörlerde bu ürün gruplarının uyarlamalarında rol almıştır.
+
+Kayalı, İşletme alanında Yüksek Lisans derecesine sahip bir Bilgisayar Mühendisidir.""",
               "https://www.linkedin.com/in/zehraoney/",
               """Futurist, mobil dönüşüm uzmanı, yatırımcı, uygulamacı, konuşmacı, teknoloji markalaşma ve pazarlama uzmanı olan Zehra Öney 1964 yılında İstanbul’da doğdu, İstanbul Üniversitesi’nde Ekonomi eğitimi aldıktan sonra 10 yıl boyunca Turizm sektöründe Türkiye’nin sayılı acentelerinde üst düzey pozisyonlarda görev aldı. Son 16 yılda ise Telekomünikasyon, Mobil ve Dijital alanlarda profesyonel yönetici olarak kariyerine devam etti. 2002 – 2007 yılları arasında Turkcell’de Uluslararası İş Geliştirme, Avrupa Birliği ve Amerika İlişkilerinde Yönetici olarak görev yapan Zehra Öney, 2007 – 2011 yılları arasında Mobilera A.Ş. Genel Müdürlüğü ile Mobilera BV Genel Müdür Yardımcılığı görevlerini eşzamanlı olarak yürüttü. 
 
@@ -746,8 +747,8 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
               "Haluk Nişli",
               "Director of Strategy and Finance at Thread In Motion",
               "haluk_nisli.jpg",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about ceri cukran",
+              "https://www.linkedin.com/in/ceri-cukran-67204960/",
+ "Ceri Cukran, 2017 yılında istanbul Bilgi Üniversitesi İşletme Bölümü'nden mezun oldu. Insumo'nun kurucu ortağı ve San Francisco, California merkezli StartersHub'ın ortağıdır. Daha önce Gamer's Qube'da Business Development Manager ve Big Chefs'te Assistant Manager olarak görev yaptı.",
               "https://www.linkedin.com/in/haluk-ni%C5%9Fli-bb6aa692/",
               "Koç Üniversitesi Endüstri Mühendisliği bölümünden mezun olduktan sonra yine Koç Üniversitesi Uluslararası Yönetim Yüksek Lisansı’nı tamamlayan Haluk Nişli, erken aşama teknoloji yatırım fonu olan StartersHub’da Yatırım ve Hukuki İlişkiler Müdürü olarak görev almıştır. Risk sermayesi yatırım fonlarından sonra girişimcilik konusunda da kendini geliştirmeyi amaçlayan Haluk Nişli, an itibariyle giyilebilir teknoloji platformu üreten Thread in Motion şirketinde Strateji ve Finans Direktörü olarak görev yapmaktadır.",
             ),
@@ -776,9 +777,9 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
               "",
               "",
               "https://www.linkedin.com/in/berilkocadereli/",
-              "about beril kocadereli",
+              "Beril Kocadereli Bilkent Üniversitesi Endüstri Mühendisliğinden 2019 yılında mezun oldu. 2021 yılında KTH Royal Institute of Technology'de Entrepreneurship and Innovation Management bölümünde master'ını tamamladı. \"Social impact measurement from an investor perspective: Impact investments\" konusunda master tezi hazırladı. Şu anda Startup Grind Stockholm'de Parnerships Lead ve Norrsken Foundation'da Impact Accelerator Intern olarak görev almakta.",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -791,7 +792,7 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
               height: 1,
             ),
             eventCard(
-             AppLocalizations.of(context).translate('osman_baytaroglu'),
+              AppLocalizations.of(context).translate('osman_baytaroglu'),
               "Osman Baytaroğlu",
               "Co Founder and CEO at Agcurate, Accurate Rural Intelligence for Agribusiness.",
               "14:00-14:55",
@@ -802,9 +803,17 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
               "",
               "",
               "https://www.linkedin.com/in/osmanbaytaroglu/",
-              "about osman baytaroğlu",
+              """He has gathered teams for high impact projects and built a couple of great products:
+
+>He has fundraised an amount of \$15.000 for LÖSEV (the Foundation for Children with Leukemia) as Vice President of Fine Arts Society at METU (2009)
+
+>Between 2010 and 2013 he has led a student team of engineers, architects, designers, and marketers that succeeded to be selected to compete in Solar Decathlon China 2013, a student competition about designing and building solar powered houses.
+
+>In 2014, he founded Innomotive, and they released global-first single sensor solution for intelligent intersection management. They exited the company later.
+
+>In 2017, he founded Agrovisio and they delivered first "soil yield potential map of Turkey" which constitutes the baseline of drought insurance products of TARSIM, Agriculture Insurance Pool of Turkey.""",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -838,7 +847,7 @@ sitelerini tek bir yönetebilmelerini sağlayan bir SaaS şirketidir.
 tekrar kendisine hatırlatmayı ve başkalarına naçizane faydalı olmayı
 hedefliyor.""",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -856,10 +865,10 @@ hedefliyor.""",
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -867,7 +876,7 @@ hedefliyor.""",
               height: 1,
             ),
             eventCard(
-              "WBA",
+              "Akıllı Şehirlerde Dijital Reklamcılık",
               "Onur Kardeşler",
               "Co-founder of Firefly",
               "16:15-17:00",
@@ -878,9 +887,9 @@ hedefliyor.""",
               "",
               "",
               "https://www.linkedin.com/in/onurkardesler/",
-              "about onur kardesler",
+              "Koç Üniversitesi,Elektrik Elektronik Mühendisliği Bölümü’nden mezun oldu. INSEAD’dan MBA diploması aldı. Girişimcilik hayatına Londra’da kurduğu teknoloji şirketi ile başladı. Silikon Vadisi’nde çeşitli teknoloji şirketlerinde Ürün Yöneticisi pozisyonunda çalıştı. Firefly’ı Kaan Günay ile 2017 senesinde kurdu.",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -909,7 +918,7 @@ Later he co-founded one of the most successful consumer-facing Augmented Reality
 Leo AR featured more than 100+ and selected as Apple's favorite app and App of the day many times.
 MojiLaLa and Leo were part of 500 Startups Batch 19, Stanford StartX Batch S19, Betaworks Vision Camp, Quark Accerator.""",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -959,10 +968,10 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -970,7 +979,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               height: 1,
             ),
             eventCard(
-               AppLocalizations.of(context).translate('presentations'),
+              AppLocalizations.of(context).translate('presentations'),
               "",
               "",
               "14:15-17:45",
@@ -980,10 +989,10 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1001,10 +1010,10 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1022,10 +1031,10 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1235,7 +1244,8 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
                             Column(
                               children: [
                                 Container(
-                                  width: MediaQuery.of(context).size.width / 2,
+                                  width:
+                                      MediaQuery.of(context).size.width / 1.8,
                                   child: Text(
                                     speaker,
                                     textAlign: TextAlign.left,
@@ -1248,7 +1258,8 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
                                   ),
                                 ),
                                 Container(
-                                  width: MediaQuery.of(context).size.width / 2,
+                                  width:
+                                      MediaQuery.of(context).size.width / 1.8,
                                   child: Text(
                                     speakerTitle,
                                     textAlign: TextAlign.left,
@@ -1318,7 +1329,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
                                       Container(
                                         width:
                                             MediaQuery.of(context).size.width /
-                                                2,
+                                                1.8,
                                         child: Text(
                                           secondSpeaker,
                                           maxLines: 2,
@@ -1332,7 +1343,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
                                       Container(
                                         width:
                                             MediaQuery.of(context).size.width /
-                                                2,
+                                                1.8,
                                         child: Text(
                                           secondSpeakerTitle,
                                           textAlign: TextAlign.left,
@@ -1359,7 +1370,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
   }
 
   Container eventListSmallerContainer() {
-        if (selectedButton == 0) {
+    if (selectedButton == 0) {
       return Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -1466,10 +1477,10 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1488,17 +1499,17 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               "",
               "",
               "https://www.linkedin.com/in/mustafasavas/",
-              "about mustafa savaş",
+              "He studied Mechanical Engineering at university and worked as a software developer and trainer for many years. Today, he leads the core technology development of Kimola and he is also responsible for company’s future plans and strategies.",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
               color: dividerColor,
               height: 1,
             ),
-             eventCardSmaller(
-              "WBA",
+            eventCardSmaller(
+              "Girişimcilikte Global Başarı Nasıl Yakalanır?",
               "Sezer Değirmenbaşı",
               "Industry Manager; Start-Ups, Apps & Gaming at Google",
               "13:00-13:55",
@@ -1509,9 +1520,9 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               "",
               "",
               "https://www.linkedin.com/in/sezer/",
-              "about sezer değirmenbaşı",
+              "Sezer Değirmenbaşı İTÜ İşletme Mühendisliği bölümünden 2006 yılında mezun oldu. 2009 yılında Boğaziçi Üniversitesi'nde İşletme Bilişim Sistemleri bölümünde yüksek lisansını tamamladı. 2006 - 2007 yılları arasında GittiGidiyor.com'da Category & Marketing Specialist olarak çalıştı. Ardından 2007 - 2010 yılları arasında Sony'de Analytics & Communications Consultant olarak görev aldı. 2010 yılından beri çalışmakta olduğu şirket olan Google'da ise Account Strategist, Account Manager, Principal Account Manager olmak üzere birçok pozisyonda görev yaptı. Şu anda Industry Manager olarak Google'da çalışmaya devam etmekte.",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1529,10 +1540,10 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1541,17 +1552,21 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
             ),
             eventCardSmaller(
               AppLocalizations.of(context).translate('evolving'),
-              "Nazlı Temurtaş",
-              "Co-Founder & CEO at MondayHero, Inc.",
+              "Çiğdem Kayalı",
+              "Women at Microsoft lead - Microsoft MEA, Founding & Board Member of Teknolojide Kadın Derneği",
               "17:00-17:55",
-              "nazli_temurtas.jpg",
+              "cigdem_kayali.jpg",
               true,
               true,
               "Zehra Öney",
-              "Founder & CEO of 360+ Media Interactive, Founding President of Teknolojide Kadın Derneği (Wtech) and Fresh'N Partners Co-Founder",
+              "Founding President of Teknolojide Kadın Derneği (Wtech)",
               "zehra_oney.jpg",
-              "https://www.linkedin.com/in/nazlitemurtas/",
-              "about nazlı temurtaş",
+              "https://www.linkedin.com/in/cigdem-kayali-0b8555/",
+              """Çiğdem Kayalı, kurumların dijital dönüşüm yolculuklarına ışık tutan, hızla gelişen teknoloji trendlerinin yaygınlaştırılmasında rol oynayan liderlerdendir. Son 5 yılını farklı sektörlerin bulut servislerinden yararlanmaları için çaba harcadı ve Microsoft’un Türkiye’de genel bulutta lider olarak yer almasında rol oynadı.
+
+Kontollü riskler almayı seven, derin endüstri bilgisine sahip olan Kayalı, kurumların ve tüketicilerin bulut servisleri ile tanışması için öncülük etmiştir. Kayalı, başta Office 365 olmak üzere Microsoft bulut servislerinin pazar stratejisini tasarladı, geliştirdi ve yönetti. Microsoft’taki 20 yıllık görev süresi boyunca, Kayalı iş stratejileri geliştirerek ve yeni iş modellerini hayata geçirerek ün kazandı. Microsoft MEA, CEE ve EMEA bölge ofislerinde farklı yöneticilik pozisyonlarında görev aldı. Bölge ülkelerindeki dijital dönüşüm faliyetlerinde liderlik gösterdiği gibi, farklı sektörlerde bu ürün gruplarının uyarlamalarında rol almıştır.
+
+Kayalı, İşletme alanında Yüksek Lisans derecesine sahip bir Bilgisayar Mühendisidir.""",
               "https://www.linkedin.com/in/zehraoney/",
               """Futurist, mobil dönüşüm uzmanı, yatırımcı, uygulamacı, konuşmacı, teknoloji markalaşma ve pazarlama uzmanı olan Zehra Öney 1964 yılında İstanbul’da doğdu, İstanbul Üniversitesi’nde Ekonomi eğitimi aldıktan sonra 10 yıl boyunca Turizm sektöründe Türkiye’nin sayılı acentelerinde üst düzey pozisyonlarda görev aldı. Son 16 yılda ise Telekomünikasyon, Mobil ve Dijital alanlarda profesyonel yönetici olarak kariyerine devam etti. 2002 – 2007 yılları arasında Turkcell’de Uluslararası İş Geliştirme, Avrupa Birliği ve Amerika İlişkilerinde Yönetici olarak görev yapan Zehra Öney, 2007 – 2011 yılları arasında Mobilera A.Ş. Genel Müdürlüğü ile Mobilera BV Genel Müdür Yardımcılığı görevlerini eşzamanlı olarak yürüttü. 
 
@@ -1579,8 +1594,8 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
               "Haluk Nişli",
               "Director of Strategy and Finance at Thread In Motion",
               "haluk_nisli.jpg",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about ceri cukran",
+              "https://www.linkedin.com/in/ceri-cukran-67204960/",
+              "Ceri Cukran, 2017 yılında istanbul Bilgi Üniversitesi İşletme Bölümü'nden mezun oldu. Insumo'nun kurucu ortağı ve San Francisco, California merkezli StartersHub'ın ortağıdır. Daha önce Gamer's Qube'da Business Development Manager ve Big Chefs'te Assistant Manager olarak görev yaptı.",
               "https://www.linkedin.com/in/haluk-ni%C5%9Fli-bb6aa692/",
               "Koç Üniversitesi Endüstri Mühendisliği bölümünden mezun olduktan sonra yine Koç Üniversitesi Uluslararası Yönetim Yüksek Lisansı’nı tamamlayan Haluk Nişli, erken aşama teknoloji yatırım fonu olan StartersHub’da Yatırım ve Hukuki İlişkiler Müdürü olarak görev almıştır. Risk sermayesi yatırım fonlarından sonra girişimcilik konusunda da kendini geliştirmeyi amaçlayan Haluk Nişli, an itibariyle giyilebilir teknoloji platformu üreten Thread in Motion şirketinde Strateji ve Finans Direktörü olarak görev yapmaktadır.",
             ),
@@ -1597,7 +1612,7 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
       return Container(
         child: Column(
           children: [
-                        eventCardSmaller(
+            eventCardSmaller(
               AppLocalizations.of(context).translate('measuring'),
               "Beril Kocadereli",
               "MSc Innovation at KTH I Norrsken Impact Accelerator | Startup Grind Stockholm",
@@ -1609,9 +1624,9 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
               "",
               "",
               "https://www.linkedin.com/in/berilkocadereli/",
-              "about beril kocadereli",
+              "Beril Kocadereli Bilkent Üniversitesi Endüstri Mühendisliğinden 2019 yılında mezun oldu. 2021 yılında KTH Royal Institute of Technology'de Entrepreneurship and Innovation Management bölümünde master'ını tamamladı. \"Social impact measurement from an investor perspective: Impact investments\" konusunda master tezi hazırladı. Şu anda Startup Grind Stockholm'de Parnerships Lead ve Norrsken Foundation'da Impact Accelerator Intern olarak görev almakta.",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1624,7 +1639,7 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
               height: 1,
             ),
             eventCardSmaller(
-             AppLocalizations.of(context).translate('osman_baytaroglu'),
+              AppLocalizations.of(context).translate('osman_baytaroglu'),
               "Osman Baytaroğlu",
               "Co Founder and CEO at Agcurate, Accurate Rural Intelligence for Agribusiness.",
               "14:00-14:55",
@@ -1635,9 +1650,17 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
               "",
               "",
               "https://www.linkedin.com/in/osmanbaytaroglu/",
-              "about osman baytaroğlu",
+              """He has gathered teams for high impact projects and built a couple of great products:
+
+>He has fundraised an amount of \$15.000 for LÖSEV (the Foundation for Children with Leukemia) as Vice President of Fine Arts Society at METU (2009)
+
+>Between 2010 and 2013 he has led a student team of engineers, architects, designers, and marketers that succeeded to be selected to compete in Solar Decathlon China 2013, a student competition about designing and building solar powered houses.
+
+>In 2014, he founded Innomotive, and they released global-first single sensor solution for intelligent intersection management. They exited the company later.
+
+>In 2017, he founded Agrovisio and they delivered first "soil yield potential map of Turkey" which constitutes the baseline of drought insurance products of TARSIM, Agriculture Insurance Pool of Turkey.""",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1671,7 +1694,7 @@ sitelerini tek bir yönetebilmelerini sağlayan bir SaaS şirketidir.
 tekrar kendisine hatırlatmayı ve başkalarına naçizane faydalı olmayı
 hedefliyor.""",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1689,10 +1712,10 @@ hedefliyor.""",
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1700,7 +1723,7 @@ hedefliyor.""",
               height: 1,
             ),
             eventCardSmaller(
-              "WBA",
+              "Akıllı Şehirlerde Dijital Reklamcılık",
               "Onur Kardeşler",
               "Co-founder of Firefly",
               "16:15-17:00",
@@ -1711,9 +1734,9 @@ hedefliyor.""",
               "",
               "",
               "https://www.linkedin.com/in/onurkardesler/",
-              "about onur kardesler",
+              "Koç Üniversitesi,Elektrik Elektronik Mühendisliği Bölümü’nden mezun oldu. INSEAD’dan MBA diploması aldı. Girişimcilik hayatına Londra’da kurduğu teknoloji şirketi ile başladı. Silikon Vadisi’nde çeşitli teknoloji şirketlerinde Ürün Yöneticisi pozisyonunda çalıştı. Firefly’ı Kaan Günay ile 2017 senesinde kurdu.",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1742,7 +1765,7 @@ Later he co-founded one of the most successful consumer-facing Augmented Reality
 Leo AR featured more than 100+ and selected as Apple's favorite app and App of the day many times.
 MojiLaLa and Leo were part of 500 Startups Batch 19, Stanford StartX Batch S19, Betaworks Vision Camp, Quark Accerator.""",
               "",
-              "about yusuf sarınay",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1792,10 +1815,10 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1803,7 +1826,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               height: 1,
             ),
             eventCardSmaller(
-               AppLocalizations.of(context).translate('presentations'),
+              AppLocalizations.of(context).translate('presentations'),
               "",
               "",
               "14:15-17:45",
@@ -1813,10 +1836,10 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1834,10 +1857,10 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
@@ -1855,10 +1878,10 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               "",
               "",
               "",
-              "https://www.linkedin.com/in/rhisarciklioglu/",
-              "about rıfat hisarclıklıoğlu",
               "",
-              "about yusuf sarınay",
+              "",
+              "",
+              "",
             ),
             Divider(
               thickness: 5,
