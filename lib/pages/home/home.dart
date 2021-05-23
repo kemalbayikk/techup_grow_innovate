@@ -3,6 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:techup/models/header_item.dart';
+import 'package:techup/pages/home/components/competition_juries.dart';
 import 'package:techup/pages/home/components/countdown.dart';
 import 'package:techup/pages/home/components/event_program.dart';
 import 'package:techup/pages/home/components/header.dart';
@@ -227,7 +228,7 @@ class _HomeState extends State<Home> {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Text(
-                                  AppLocalizations.of(context).translate('our_sponsors'),
+                                  "Yarışma ve Jürilerimiz",
                                   style: TextStyle(
                                     color: _isHovering[2]
                                         ? Colors.blue[200]
@@ -259,13 +260,13 @@ class _HomeState extends State<Home> {
                               });
                             },
                             onTap: () {
-                              _animateToIndex(eventProgramHeight + 2700);
+                              _animateToIndex(eventProgramHeight + 5000);
                             },
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Text(
-                                  AppLocalizations.of(context).translate('who_are_we'),
+                                  AppLocalizations.of(context).translate('our_sponsors'),
                                   style: TextStyle(
                                     color: _isHovering[3]
                                         ? Colors.blue[200]
@@ -278,6 +279,44 @@ class _HomeState extends State<Home> {
                                   maintainState: true,
                                   maintainSize: true,
                                   visible: _isHovering[3],
+                                  child: Container(
+                                    height: 2,
+                                    width: 20,
+                                    color: Colors.white,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          SizedBox(width: screenSize.width / 20),
+                          InkWell(
+                            onHover: (value) {
+                              setState(() {
+                                value
+                                    ? _isHovering[4] = true
+                                    : _isHovering[4] = false;
+                              });
+                            },
+                            onTap: () {
+                              _animateToIndex(eventProgramHeight + 5800);
+                            },
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  AppLocalizations.of(context).translate('who_are_we'),
+                                  style: TextStyle(
+                                    color: _isHovering[4]
+                                        ? Colors.blue[200]
+                                        : Colors.white,
+                                  ),
+                                ),
+                                SizedBox(height: 5),
+                                Visibility(
+                                  maintainAnimation: true,
+                                  maintainState: true,
+                                  maintainSize: true,
+                                  visible: _isHovering[4],
                                   child: Container(
                                     height: 2,
                                     width: 20,
@@ -333,7 +372,7 @@ class _HomeState extends State<Home> {
                           ),
                           Container(
                             width: MediaQuery.of(context).size.width,
-                            height: 220,
+                            height: 300,
                             child: Column(
                               //crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
@@ -386,6 +425,34 @@ class _HomeState extends State<Home> {
                                     }
                                   },
                                 ),
+SizedBox(
+                            height: 10,
+                          ),
+                                TextButton(
+                                  style: ButtonStyle(
+                                    backgroundColor:
+                                        MaterialStateProperty.all<Color>(
+                                            Colors.black),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Text(
+                                      "Etkinliğe Gitmek İçin Tıklayın",
+                                      style: GoogleFonts.montserrat(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 32,
+                                      ),
+                                    ),
+                                  ),
+                                  onPressed: () async {
+                                    if (await canLaunch(
+                                        "https://tobbetu-edu-tr.zoom.us/j/83044139116")) {
+                                      await launch(
+                                          "https://tobbetu-edu-tr.zoom.us/j/83044139116");
+                                    }
+                                  },
+                                ),
                                 /* Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -433,6 +500,10 @@ class _HomeState extends State<Home> {
                 WhatIsPage(),
 
                 EventProgram(this.callback),
+                SizedBox(
+                  height: 150,
+                ),
+                CompetitionJuries(),
                 SizedBox(
                   height: 150,
                 ),
@@ -544,7 +615,20 @@ class _HomeState extends State<Home> {
                     ),
                     InkWell(
                       onTap: () {
-                        _animateToIndex(eventProgramHeightSmall + 2300);
+                        _animateToIndex(eventProgramHeightSmall + 2200);
+                      },
+                      child: Text(
+                        "Yarışma ve Jürilerimiz",
+                        style: TextStyle(color: Colors.white, fontSize: 22),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
+                      child: Divider(),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        _animateToIndex(eventProgramHeightSmall + 7000);
                       },
                       child: Text(
                         AppLocalizations.of(context).translate('our_sponsors'),
@@ -557,7 +641,7 @@ class _HomeState extends State<Home> {
                     ),
                     InkWell(
                       onTap: () {
-                        _animateToIndex(eventProgramHeightSmall + 3200);
+                        _animateToIndex(eventProgramHeightSmall + 8200);
                       },
                       child: Text(
                         AppLocalizations.of(context).translate('who_are_we'),
@@ -606,7 +690,7 @@ class _HomeState extends State<Home> {
                           ),
                           Container(
                             width: MediaQuery.of(context).size.width,
-                            height: 320,
+                            height: 420,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
@@ -650,6 +734,35 @@ class _HomeState extends State<Home> {
                                         "https://forms.gle/YkSMJhWiaL7QnmaF9")) {
                                       await launch(
                                           "https://forms.gle/YkSMJhWiaL7QnmaF9");
+                                    }
+                                  },
+                                ),
+SizedBox(
+                            height: 10,
+                          ),
+                                TextButton(
+                                  style: ButtonStyle(
+                                    backgroundColor:
+                                        MaterialStateProperty.all<Color>(
+                                            Colors.black),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Text(
+                                      "Etkinliğe Gitmek İçin Tıklayın",
+                                      textAlign: TextAlign.center,
+                                      style: GoogleFonts.montserrat(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 32,
+                                      ),
+                                    ),
+                                  ),
+                                  onPressed: () async {
+                                    if (await canLaunch(
+                                        "https://tobbetu-edu-tr.zoom.us/j/83044139116")) {
+                                      await launch(
+                                          "https://tobbetu-edu-tr.zoom.us/j/83044139116");
                                     }
                                   },
                                 ),
@@ -699,6 +812,10 @@ class _HomeState extends State<Home> {
                 ),
                                 WhatIsPage(),
                 EventProgram(this.callback),
+                SizedBox(
+                  height: 150,
+                ),
+                CompetitionJuries(),
                 SizedBox(
                   height: 150,
                 ),

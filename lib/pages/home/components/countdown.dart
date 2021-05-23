@@ -23,7 +23,7 @@ class _CountdownState extends State<Countdown> {
         return Container(
           alignment: Alignment.bottomCenter,
           child: CountdownTimer(
-            endTime: DateTime(2021, 5, 22, 12, 30).millisecondsSinceEpoch,
+            endTime: DateTime(2021, 5, 22, 11, 28).millisecondsSinceEpoch,
             widgetBuilder: (_, CurrentRemainingTime time) {
               if (time == null) {
                 return countDownCard(0, 0, 0, 0);
@@ -64,7 +64,7 @@ class _CountdownState extends State<Countdown> {
         return Container(
           alignment: Alignment.bottomCenter,
           child: CountdownTimer(
-            endTime: DateTime(2021, 5, 22, 12, 30).millisecondsSinceEpoch,
+            endTime: DateTime(2021, 5, 22, 11, 28).millisecondsSinceEpoch,
             widgetBuilder: (_, CurrentRemainingTime time) {
               if (time == null) {
                 return countDownCardSmaller(0, 0, 0, 0);

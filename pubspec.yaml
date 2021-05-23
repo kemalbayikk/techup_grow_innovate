@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^1.1.1
   responsive_framework: ^0.1.0
+  flip_card: ^0.5.0
   flutter_icons: ^1.1.0
   percent_indicator: ^3.0.1
   flutter_countdown_timer: ^4.1.0
