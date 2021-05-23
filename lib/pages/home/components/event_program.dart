@@ -55,7 +55,7 @@ class _EventProgramState extends State<EventProgram> {
                     child: TextButton(
                       onPressed: () {
                         setState(() {
-                          this.widget.callback(3000, 3450);
+                          this.widget.callback(3000, 3800);
                           selectedButton = 0;
                           buttonZeroColor = kCaptionColor;
                           buttonZeroTextColor = Colors.white;
@@ -84,7 +84,7 @@ class _EventProgramState extends State<EventProgram> {
                     child: TextButton(
                       onPressed: () {
                         setState(() {
-                          this.widget.callback(2200, 3450);
+                          this.widget.callback(2700, 5500);
                           selectedButton = 1;
                           buttonZeroColor = Colors.white;
                           buttonZeroTextColor = kCaptionColor;
@@ -170,7 +170,7 @@ class _EventProgramState extends State<EventProgram> {
                     child: TextButton(
                       onPressed: () {
                         setState(() {
-                          this.widget.callback(1450.0, 4000.0);
+                          this.widget.callback(1450.0, 3800.0);
                           selectedButton = 0;
                           buttonZeroColor = kCaptionColor;
                           buttonZeroTextColor = Colors.white;
@@ -199,7 +199,7 @@ class _EventProgramState extends State<EventProgram> {
                     child: TextButton(
                       onPressed: () {
                         setState(() {
-                          this.widget.callback(500.0, 2600.0);
+                          this.widget.callback(500.0, 3500.0);
                           selectedButton = 1;
                           buttonZeroColor = Colors.white;
                           buttonZeroTextColor = kCaptionColor;
@@ -228,7 +228,7 @@ class _EventProgramState extends State<EventProgram> {
                     child: TextButton(
                       onPressed: () {
                         setState(() {
-                          this.widget.callback(1110.0, 1000.0);
+                          this.widget.callback(1110.0, 1200.0);
                           selectedButton = 2;
                           buttonZeroColor = Colors.white;
                           buttonZeroTextColor = kCaptionColor;
@@ -530,22 +530,18 @@ class _EventProgramState extends State<EventProgram> {
           children: [
             eventCard(
               AppLocalizations.of(context).translate('opening_speech'),
-              "Prof. Dr. Yusuf Sarınay",
-              "TOBB ETÜ Rektörü",
+              "Hakan Kızıltoprak",
+              "Director of TOBB ETU Technology Transfer Office",
               "12:30-12.45",
-              "yusuf_sarinay.png",
+              "hakan_kiziltoprak.jpg",
               false,
-              false,
-              "Yusuf Sarınay",
-              "TOBB ETÜ Rektörü",
-              "yusuf_sarinay.png",
-              "",
-              """"1959 Konya doğumlu olup, 1981 yılında Hacettepe Üniversitesi Sosyal ve İdari Bilimler Fakültesi Tarih Bölümü’nden mezun oldu. 1983 yılında Hacettepe Üniversitesi’nde Araştırma Görevlisi olarak işe başladıktan sonra, 1985 yılında yüksek lisans 1993 yılında doktora derecesi aldı. 1994 yılında MEB Talim Terbiye Kurulu’nda Türkiye Cumhuriyeti Tarihi Özel İhtisas Komisyonu’nda görevlendirildi. 1996 yılında Hacettepe Üniversitesinde Yardımcı Doçentlik kadrosuna atandı. 2002 yılında doçentlik ünvanını aldı. 
-
-16 Ocak 2001 tarihinde Başbakanlık Devlet Arşivleri Genel Müdürlüğü görevine atandı.  Ekim 2003 tarihinde Türk Askeri Tarih Komisyonu Yürütme Kurulu Üyeliğine seçildi. 2004-2012 yıllar arasında Bakanlar Kurulu Kararı ile Bilgi Edinme Değerlendirme Kurulu Üyeliği görevinde bulundu. 2004 yılında Milletlerarası Arşiv Konseyi’nin Avrupa Kolu Yönetim Kurulu Üyeliği görevine getirildi. 2005 yılında DPT 9. Kalkınma Planı Kültür Özel İhtisas Komisyonu’nda çalıştı. UNESCO Türkiye Milli Komisyonu üyeliği ve Yunus Emre Enstitüsü Yönetim Kurulu üyeliği görevlerinde bulundu.
-
-2012 yılından Rektörlüğe atandığı bugüne kadar TOBB Ekonomi ve Teknoloji Üniversitesi Fen Edebiyat Fakültesi Dekanlığı ve Rektör Yardımcılığı görevlerini yürüttü.""",
-              "",
+              true,
+              "Doç. Dr. Göknur Büke",
+              "Ar-Ge ve İnovasyondan Sorumlu Rektör Danışmanı",
+              "goknur_buke.jpg",
+              "https://www.linkedin.com/in/hakankiziltoprak/?originalSubdomain=tr",
+              "Special Advisor to President - TOBB Director,Technology Transfer Office - TOBB ETU Member of the Board of Directors, Turkish Accelerator Radiation Laboratory - TARLA Finance Committee Delegate & Chair of ILO Forum - CERN",
+              "https://www.linkedin.com/in/g%C3%B6knur-b%C3%BCke-490a1749/?originalSubdomain=tr",
               "",
             ),
             Divider(
@@ -665,7 +661,7 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               "Girişimcilikte Global Başarı Nasıl Yakalanır?",
               "Sezer Değirmenbaşı",
               "Industry Manager; Start-Ups, Apps & Gaming at Google",
-              "13:00-13:55",
+              "15:45-16:25",
               "sezer_degirmenbasi.jpg",
               false,
               false,
@@ -683,7 +679,7 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               height: 1,
             ),
             eventCard(
-              AppLocalizations.of(context).translate('coffee_talks'),
+              AppLocalizations.of(context).translate('coffee_break'),
               "",
               "",
               "16:30-17:00",
@@ -706,7 +702,7 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
             eventCard(
               AppLocalizations.of(context).translate('evolving'),
               "Çiğdem Kayalı",
-              "Women at Microsoft lead - Microsoft MEA, Founding & Board Member of Teknolojide Kadın Derneği",
+              "Microsoft MEA Teknoloji Direktörü, Teknolojide Kadın Derneği Yönetim Kurulu Üyesi",
               "17:00-17:55",
               "cigdem_kayali.jpg",
               true,
@@ -748,7 +744,7 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
               "Director of Strategy and Finance at Thread In Motion",
               "haluk_nisli.jpg",
               "https://www.linkedin.com/in/ceri-cukran-67204960/",
- "Ceri Cukran, 2017 yılında istanbul Bilgi Üniversitesi İşletme Bölümü'nden mezun oldu. Insumo'nun kurucu ortağı ve San Francisco, California merkezli StartersHub'ın ortağıdır. Daha önce Gamer's Qube'da Business Development Manager ve Big Chefs'te Assistant Manager olarak görev yaptı.",
+              "Ceri Cukran, 2017 yılında istanbul Bilgi Üniversitesi İşletme Bölümü'nden mezun oldu. Insumo'nun kurucu ortağı ve San Francisco, California merkezli StartersHub'ın ortağıdır. Daha önce Gamer's Qube'da Business Development Manager ve Big Chefs'te Assistant Manager olarak görev yaptı.",
               "https://www.linkedin.com/in/haluk-ni%C5%9Fli-bb6aa692/",
               "Koç Üniversitesi Endüstri Mühendisliği bölümünden mezun olduktan sonra yine Koç Üniversitesi Uluslararası Yönetim Yüksek Lisansı’nı tamamlayan Haluk Nişli, erken aşama teknoloji yatırım fonu olan StartersHub’da Yatırım ve Hukuki İlişkiler Müdürü olarak görev almıştır. Risk sermayesi yatırım fonlarından sonra girişimcilik konusunda da kendini geliştirmeyi amaçlayan Haluk Nişli, an itibariyle giyilebilir teknoloji platformu üreten Thread in Motion şirketinde Strateji ve Finans Direktörü olarak görev yapmaktadır.",
             ),
@@ -766,10 +762,41 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
         child: Column(
           children: [
             eventCard(
+              "Yarının Dünyasında Girişimcilik",
+              "Yasin Oral",
+              "Founder, CEO / Paribu",
+              "12:30-13:10",
+              "yasin_oral.jpg",
+              false,
+              false,
+              "",
+              "",
+              "",
+              "https://www.linkedin.com/in/yasinoral/",
+              """1985 yılında Ankara’da doğan Yasin Oral, yazılım çalışmalarına lise döneminde başladı. 2001’de, henüz lise öğrencisiyken TÜBİTAK’ın bir yarışmasına katıldı ve TÜBİTAK web sitesi geliştirmelerine dışarıdan destek sağladı.
+
+Üniversite yıllarında taşımacılık sektöründe faaliyet gösteren bir internet sitesi kurdu ve site kısa süre içinde nakliyeciler arasındaki koordinasyonu sağlayan tek platform haline geldi.
+
+2009’da Gazi Üniversitesi İktisadi ve İdari Bilimler Fakültesi’nden mezun olan Oral, 2010’da Türkiye’nin ilk online matbaası matbuu.com’u hayata geçirdi.
+
+Bu girişimlerinin yanı sıra tüm dünyada hizmet veren birçok mesafe hesaplama ve rota görüntüleme projesi yaratarak günlük 250 binin üzerinde kullanıcıya hizmet vermeye başladı. 2015’te online bilet satın alım platformu Biletgo’yu kurdu.
+
+2015’te Paribu’nun ön hazırlık çalışmalarına başladı. Paribu, 2016’da kuruldu, 14 Şubat 2017’de kullanıma açıldı.
+
+Halen Paribu CEO’su olan Oral, Blockchain Türkiye Platformu Yürütme Kurulu üyesi ve Türkiye Genç İş Adamları Derneği üyesidir.""",
+              "",
+              "",
+            ),
+            Divider(
+              thickness: 5,
+              color: dividerColor,
+              height: 1,
+            ),
+            eventCard(
               AppLocalizations.of(context).translate('measuring'),
               "Beril Kocadereli",
               "MSc Innovation at KTH I Norrsken Impact Accelerator | Startup Grind Stockholm",
-              "13:00-13:55",
+              "13:10-13:55",
               "beril_kocadereli.jpg",
               false,
               false,
@@ -950,6 +977,22 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               color: dividerColor,
               height: 1,
             ),
+            eventCard(
+              "Kapanış Partisi (Çekiliş)",
+              "",
+              "",
+              "19:00-19:30",
+              "",
+              false,
+              false,
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+            ),
           ],
         ),
       );
@@ -961,7 +1004,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               AppLocalizations.of(context).translate('opening'),
               "",
               "",
-              "14:00-14:15",
+              "13:45-14:00",
               "",
               false,
               false,
@@ -982,7 +1025,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               AppLocalizations.of(context).translate('presentations'),
               "",
               "",
-              "14:15-17:45",
+              "14:00-15:00",
               "",
               false,
               false,
@@ -1003,7 +1046,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               AppLocalizations.of(context).translate('break'),
               "",
               "",
-              "17:45-18:30",
+              "15:00-15:15",
               "",
               false,
               false,
@@ -1024,7 +1067,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               AppLocalizations.of(context).translate('ceremony'),
               "",
               "",
-              "18:30-18:45",
+              "15:20",
               "",
               false,
               false,
@@ -1377,22 +1420,18 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
           children: [
             eventCardSmaller(
               AppLocalizations.of(context).translate('opening_speech'),
-              "Prof. Dr. Yusuf Sarınay",
-              "TOBB ETÜ Rektörü",
+              "Hakan Kızıltoprak",
+              "Director of TOBB ETU Technology Transfer Office",
               "12:30-12.45",
-              "yusuf_sarinay.png",
+              "hakan_kiziltoprak.jpg",
               false,
-              false,
-              "Yusuf Sarınay",
-              "TOBB ETÜ Rektörü",
-              "yusuf_sarinay.png",
-              "",
-              """"1959 Konya doğumlu olup, 1981 yılında Hacettepe Üniversitesi Sosyal ve İdari Bilimler Fakültesi Tarih Bölümü’nden mezun oldu. 1983 yılında Hacettepe Üniversitesi’nde Araştırma Görevlisi olarak işe başladıktan sonra, 1985 yılında yüksek lisans 1993 yılında doktora derecesi aldı. 1994 yılında MEB Talim Terbiye Kurulu’nda Türkiye Cumhuriyeti Tarihi Özel İhtisas Komisyonu’nda görevlendirildi. 1996 yılında Hacettepe Üniversitesinde Yardımcı Doçentlik kadrosuna atandı. 2002 yılında doçentlik ünvanını aldı. 
-
-16 Ocak 2001 tarihinde Başbakanlık Devlet Arşivleri Genel Müdürlüğü görevine atandı.  Ekim 2003 tarihinde Türk Askeri Tarih Komisyonu Yürütme Kurulu Üyeliğine seçildi. 2004-2012 yıllar arasında Bakanlar Kurulu Kararı ile Bilgi Edinme Değerlendirme Kurulu Üyeliği görevinde bulundu. 2004 yılında Milletlerarası Arşiv Konseyi’nin Avrupa Kolu Yönetim Kurulu Üyeliği görevine getirildi. 2005 yılında DPT 9. Kalkınma Planı Kültür Özel İhtisas Komisyonu’nda çalıştı. UNESCO Türkiye Milli Komisyonu üyeliği ve Yunus Emre Enstitüsü Yönetim Kurulu üyeliği görevlerinde bulundu.
-
-2012 yılından Rektörlüğe atandığı bugüne kadar TOBB Ekonomi ve Teknoloji Üniversitesi Fen Edebiyat Fakültesi Dekanlığı ve Rektör Yardımcılığı görevlerini yürüttü.""",
-              "",
+              true,
+             "Doç. Dr. Göknur Büke",
+              "Ar-Ge ve İnovasyondan Sorumlu Rektör Danışmanı",
+              "goknur_buke.jpg",
+              "https://www.linkedin.com/in/hakankiziltoprak/?originalSubdomain=tr",
+              "Special Advisor to President - TOBB Director,Technology Transfer Office - TOBB ETU Member of the Board of Directors, Turkish Accelerator Radiation Laboratory - TARLA Finance Committee Delegate & Chair of ILO Forum - CERN",
+              "https://www.linkedin.com/in/g%C3%B6knur-b%C3%BCke-490a1749/?originalSubdomain=tr",
               "",
             ),
             Divider(
@@ -1512,7 +1551,7 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               "Girişimcilikte Global Başarı Nasıl Yakalanır?",
               "Sezer Değirmenbaşı",
               "Industry Manager; Start-Ups, Apps & Gaming at Google",
-              "13:00-13:55",
+              "15:45-16:25",
               "sezer_degirmenbasi.jpg",
               false,
               false,
@@ -1530,7 +1569,7 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
               height: 1,
             ),
             eventCardSmaller(
-              AppLocalizations.of(context).translate('coffee_talks'),
+              AppLocalizations.of(context).translate('coffee_break'),
               "",
               "",
               "16:30-17:00",
@@ -1553,7 +1592,7 @@ Halen “Yaratıcı Marka Danışmanı” olarak birçok marka ve kişiye danı�
             eventCardSmaller(
               AppLocalizations.of(context).translate('evolving'),
               "Çiğdem Kayalı",
-              "Women at Microsoft lead - Microsoft MEA, Founding & Board Member of Teknolojide Kadın Derneği",
+              "Microsoft MEA Teknoloji Direktörü, Teknolojide Kadın Derneği Yönetim Kurulu Üyesi",
               "17:00-17:55",
               "cigdem_kayali.jpg",
               true,
@@ -1613,10 +1652,41 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
         child: Column(
           children: [
             eventCardSmaller(
+              "Yarının Dünyasında Girişimcilik",
+              "Yasin Oral",
+              "Founder, CEO / Paribu",
+              "12:30-13:10",
+              "yasin_oral.jpg",
+              false,
+              false,
+              "",
+              "",
+              "",
+              "https://www.linkedin.com/in/yasinoral/",
+              """1985 yılında Ankara’da doğan Yasin Oral, yazılım çalışmalarına lise döneminde başladı. 2001’de, henüz lise öğrencisiyken TÜBİTAK’ın bir yarışmasına katıldı ve TÜBİTAK web sitesi geliştirmelerine dışarıdan destek sağladı.
+
+Üniversite yıllarında taşımacılık sektöründe faaliyet gösteren bir internet sitesi kurdu ve site kısa süre içinde nakliyeciler arasındaki koordinasyonu sağlayan tek platform haline geldi.
+
+2009’da Gazi Üniversitesi İktisadi ve İdari Bilimler Fakültesi’nden mezun olan Oral, 2010’da Türkiye’nin ilk online matbaası matbuu.com’u hayata geçirdi.
+
+Bu girişimlerinin yanı sıra tüm dünyada hizmet veren birçok mesafe hesaplama ve rota görüntüleme projesi yaratarak günlük 250 binin üzerinde kullanıcıya hizmet vermeye başladı. 2015’te online bilet satın alım platformu Biletgo’yu kurdu.
+
+2015’te Paribu’nun ön hazırlık çalışmalarına başladı. Paribu, 2016’da kuruldu, 14 Şubat 2017’de kullanıma açıldı.
+
+Halen Paribu CEO’su olan Oral, Blockchain Türkiye Platformu Yürütme Kurulu üyesi ve Türkiye Genç İş Adamları Derneği üyesidir.""",
+              "",
+              "",
+            ),
+            Divider(
+              thickness: 5,
+              color: dividerColor,
+              height: 1,
+            ),
+            eventCardSmaller(
               AppLocalizations.of(context).translate('measuring'),
               "Beril Kocadereli",
               "MSc Innovation at KTH I Norrsken Impact Accelerator | Startup Grind Stockholm",
-              "13:00-13:55",
+              "13:10-13:55",
               "beril_kocadereli.jpg",
               false,
               false,
@@ -1627,11 +1697,6 @@ Zehra Öney, Teknolojide Kadın Derneği Kurucu Başkanı, Dorçe Prefabrik Bağ
               "Beril Kocadereli Bilkent Üniversitesi Endüstri Mühendisliğinden 2019 yılında mezun oldu. 2021 yılında KTH Royal Institute of Technology'de Entrepreneurship and Innovation Management bölümünde master'ını tamamladı. \"Social impact measurement from an investor perspective: Impact investments\" konusunda master tezi hazırladı. Şu anda Startup Grind Stockholm'de Parnerships Lead ve Norrsken Foundation'da Impact Accelerator Intern olarak görev almakta.",
               "",
               "",
-            ),
-            Divider(
-              thickness: 5,
-              color: dividerColor,
-              height: 1,
             ),
             Divider(
               thickness: 5,
@@ -1797,6 +1862,22 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               color: dividerColor,
               height: 1,
             ),
+            eventCardSmaller(
+              "Kapanış Partisi (Çekiliş)",
+              "",
+              "",
+              "19:00-19:30",
+              "",
+              false,
+              false,
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+            ),
           ],
         ),
       );
@@ -1808,7 +1889,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               AppLocalizations.of(context).translate('opening'),
               "",
               "",
-              "14:00-14:15",
+              "13:45-14:00",
               "",
               false,
               false,
@@ -1829,7 +1910,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               AppLocalizations.of(context).translate('presentations'),
               "",
               "",
-              "14:15-17:45",
+              "14:00-15:00",
               "",
               false,
               false,
@@ -1850,7 +1931,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               AppLocalizations.of(context).translate('break'),
               "",
               "",
-              "17:45-18:30",
+              "15:00-15:15",
               "",
               false,
               false,
@@ -1871,7 +1952,7 @@ Prof. Erçil Arcelik Uluslararası Danışma Kurulu üyesi, Allianz Uluslararas�
               AppLocalizations.of(context).translate('ceremony'),
               "",
               "",
-              "18:30-18:45",
+              "15:20",
               "",
               false,
               false,
